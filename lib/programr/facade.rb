@@ -16,17 +16,17 @@ class Facade
   end
 
   def loading(theCacheFilename='cache')
-    #cache = Cache::loading(theCacheFilename)
-    #@graph_master = cache if cache
+    cache = Cache::loading(theCacheFilename)
+    @graph_master = cache if cache
   end
 
   def merging(theCacheFilename='cache')
-    #cache = Cache::loading(theCacheFilename)
-    #@graph_master.merge(cache) if cache
+    cache = Cache::loading(theCacheFilename)
+    @graph_master.merge(cache) if cache
   end
 
   def dumping(theCacheFilename='cache')
-    #Cache::dumping(theCacheFilename,@graph_master)
+    Cache::dumping(theCacheFilename,@graph_master)
   end
 
   def get_reaction(stimula,firstStimula=true)
